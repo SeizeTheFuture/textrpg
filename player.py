@@ -45,4 +45,7 @@ class Player:
                 self.player_pos_column -= 1
             case _:
                 print("Try again")
-        print(mapdictionary[tilemap[self.player_pos_row][self.player_pos_column]])
+        try:
+            print(mapdictionary[tilemap[self.player_pos_row][self.player_pos_column]])
+        except IndexError:
+            print("You have gone too far. Retrace your steps.")

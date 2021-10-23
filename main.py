@@ -23,6 +23,6 @@ def game_loop():
 
 player.name, player.player_class = intro_screen()
 player.print_stats()
-print(player.name, player.player_class)
+print(f"Welcome {player.name} the {player.player_class}")
 print(mapdictionary[tilemap[player.player_pos_row][player.player_pos_column]])
 game_loop()
